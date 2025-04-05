@@ -19,10 +19,7 @@ The easiest way to get started is to use the npm setup script:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/your-repo.git
-
-# Navigate to the project directory
-cd your-repo
+git clone https://github.com/GabeRobison/Super-Epic-Awesome-To-Do-List-App.git
 
 # Run the setup script
 npm run setup
