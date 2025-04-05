@@ -38,6 +38,24 @@ The setup script will:
 3. Create a database and user for the application
 4. Create a .env file for your database password
 
+### Stopping the Application
+
+To properly stop the application and clean up resources:
+
+1. Stop the Node.js server with Ctrl+C
+2. Run the teardown script to stop MySQL and clean up resources:
+   ```bash
+   npm run teardown
+   ```
+
+The teardown script will:
+
+1. Stop the MySQL service
+2. Optionally drop the application database
+3. Optionally remove environment files with credentials
+
+This helps ensure a clean shutdown and prevents MySQL from consuming system resources when not in use.
+
 ## Manual Setup
 
 ### Prerequisites

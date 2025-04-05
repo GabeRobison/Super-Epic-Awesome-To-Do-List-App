@@ -208,5 +208,7 @@ app.delete("/comments/:id", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running at ${'\x1b[36m'}http://localhost:${PORT}${'\x1b[0m'}`);
+  console.log(
+    `Server running at ${"\x1b[36m"}http://localhost:${PORT}${"\x1b[0m"}`
+  );
 });
