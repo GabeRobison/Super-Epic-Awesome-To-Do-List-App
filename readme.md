@@ -91,7 +91,7 @@ npm start
   - `script.js` - Client-side JavaScript
 - `setup.sh` - Automated setup script
 
-## Troubleshooting
+## Troubleshooting (Windows probably)
 
 ### MySQL Connection Issues
 
