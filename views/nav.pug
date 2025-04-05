@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Super Epic Awesome To-Do List!
+    link(rel="stylesheet", href="/css.css")
+  body
+    header
+      h1 Super Epic Awesome To-Do List!
+      nav
+        a(href="/?filter=all", class=filter === 'all' ? 'current-page' : '') All Tasks
+        a(href="/?filter=done", class=filter === 'done' ? 'current-page' : '') Completed
+        a(href="/?filter=undone", class=filter === 'undone' ? 'current-page' : '') Not Done
+    main
+      block content
+    script(src="/script.js")

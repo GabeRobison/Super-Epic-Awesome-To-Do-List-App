@@ -1,0 +1,20 @@
+extends nav
+
+block content
+  section.create-todo
+    h2 Create New Task
+    form(action="/todos", method="POST")
+      input(type="text", name="title", placeholder="Task title", required)
+      textarea(name="description", placeholder="Task description")
+      button(type="submit") Create Task
+  section.todo-list
+    h2 Tasks
+    if todos
+      ul
+        each todo in todos
+          li(data-id=todo.id, class=todo.is_done ? 'done' : '')
+            input(type="checkbox", class="toggle-todo", checked=todo.is_done ? true : false)
+            .todo-content
+              h3
+                a(href=`/todos/${todo.id}`)= todo.title
+            button.delete-todo Delete

@@ -1,0 +1,22 @@
+extends nav
+
+block content
+  section.todo-details
+    h2= todo.title
+    .description
+      h3 Description
+      textarea.edit(rows="4")= todo.description
+      button.save Save Changes
+
+    section.comments
+      h3 Comments
+      form.add(action=`/todos/${todo.id}/comments`, method="POST")
+        textarea(name="content", placeholder="Add a comment", required)
+        button(type="submit") Add Comment
+
+      if comments && comments.length
+        ul.comment-list
+          each comment in comments
+            li
+              p= comment.content
+              button.delete-comment(data-id=comment.id) Delete

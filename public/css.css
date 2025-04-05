@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: darkslategray;
+  background-color: lightgoldenrodyellow;
+}
+
+header {
+  background-color: darkslategray;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+  justify-self: center;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  justify-self: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: grey;
+}
+
+nav a.current-page {
+  background-color: steelblue;
+}
+
+main {
+  max-width: 30rem;
+  margin: 2rem auto;
+}
+
+section {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: darkslategray;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: steelblue;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+button:hover {
+  background-color: #4daff0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid darkslategray;
+  gap: 1rem;
+}
+
+.todo-list li:last-child {
+  border-bottom: none;
+}
+
+.todo-content {
+  flex-grow: 1;
+}
+
+.todo-content a {
+  text-decoration: none;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: steelblue;
+}
+
+.todo-content a:hover {
+  background-color: #4daff0;
+  transition: background-color 0.25s;
+}
+
+.done .todo-content {
+  text-decoration: line-through;
+  color: black;
+}
+
+.delete-todo {
+  background-color: red;
+}
+
+.comment-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.comment-list li {
+  padding: 1rem;
+  border: 1px solid darkslategray;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit {
+  margin-bottom: 0.5rem;
+}
+
+.comment-list li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-comment {
+  background-color: red;
+}
