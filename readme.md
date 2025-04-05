@@ -1,6 +1,6 @@
 # Super Epic Awesome To-Do List!
 
-Robust todo list built with Express.js and MySQL.
+Todo list built with Express.js, MySQL, Pug.
 
 ## Features Implemented
 
@@ -19,10 +19,7 @@ The easiest way to get started is to use the npm setup script:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/your-repo.git
-
-# Navigate to the project directory
-cd your-repo
+git clone https://github.com/GabeRobison/Super-Epic-Awesome-To-Do-List-App.git
 
 # Run the setup script
 npm run setup
@@ -112,7 +109,7 @@ npm start
   - `script.js` - Client-side JavaScript
 - `setup.sh` - Automated setup script
 
-## Troubleshooting
+## Troubleshooting (Windows probably)
 
 ### MySQL Connection Issues
 
