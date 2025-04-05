@@ -1,6 +1,6 @@
 # Super Epic Awesome To-Do List!
 
-Todo list built with Express.js and MySQL.
+Todo list built with Express.js, MySQL, Pug.
 
 ## Features Implemented
 
